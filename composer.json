@@ -1,0 +1,35 @@
+{
+  "name": "eric-baranowski/microventures",
+  "description": "Coding Assignment",
+  "type": "project",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Eric Baranowski",
+      "email": "eric@kulado.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "aura/sql": "2.x-dev",
+    "aura/sqlquery": "2.x-dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Microventures\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Microventures\\Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "run": "php run.php",
+    "test": "phpunit"
+  }
+}
